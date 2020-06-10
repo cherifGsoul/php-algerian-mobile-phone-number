@@ -57,7 +57,7 @@ $phoneNumber = AlgerianMobilePhoneNumber::fromString('0699000000');
 ```
 
 ## Contribution
-Any contribution are welcome to make this library better.
+Contributions are welcome to make this library better.
 
 ### Testing:
 Inside the repository :
