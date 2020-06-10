@@ -40,7 +40,7 @@ $phoneNumber->equals($other); // -> true
 
 #### isMobilis, isDjezzy and isOoredoo
 
-To know if the object respresent a Mobilis, Djezzy or Ooredoo phone number
+To know if the object respresents a Mobilis, Djezzy or Ooredoo phone number
 
 ```php
 $phoneNumber = AlgerianMobilePhoneNumber::fromString('0699000000');
