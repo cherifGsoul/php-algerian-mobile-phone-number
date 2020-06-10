@@ -44,7 +44,7 @@ To know if the object respresent a Mobilis, Djezzy or Ooreedo phone number
 
 ```php
 $phoneNumber = AlgerianMobilePhoneNumber::fromString('0699000000');
-$phoneNumber->isMobiles(); // -> true
+$phoneNumber->isMobilis(); // -> true
 $phoneNumber->isDjezzy(); // -> false
 $phoneNumber->isOoreedo(); // -> false
 ```
