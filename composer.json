@@ -3,6 +3,7 @@
     "description": "Algerian mobile phone number value object",
     "type": "library",
     "license": "MIT",
+    "minimum-stability": "stable",
     "authors": [
         {
             "name": "Cherif BOUCHELAGHEM",
@@ -10,7 +11,7 @@
         }
     ],
     "require": {
-        "php": "7.2.0"
+        "php": ">=7.2.0"
     },
     "autoload": {
         "psr-4": {
