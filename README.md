@@ -38,15 +38,15 @@ $other = AlgerianMobilePhoneNumber::fromString('0699000000');
 $phoneNumber->equals($other); // -> true
 ```
 
-#### isMobilis, isDjezzy and isOoreedo
+#### isMobilis, isDjezzy and isOoredoo
 
-To know if the object respresent a Mobilis, Djezzy or Ooreedo phone number
+To know if the object respresent a Mobilis, Djezzy or Ooredoo phone number
 
 ```php
 $phoneNumber = AlgerianMobilePhoneNumber::fromString('0699000000');
-$phoneNumber->isMobiles(); // -> true
+$phoneNumber->isMobilis(); // -> true
 $phoneNumber->isDjezzy(); // -> false
-$phoneNumber->isOoreedo(); // -> false
+$phoneNumber->isOoredoo(); // -> false
 ```
 
 #### __toString
