@@ -40,7 +40,7 @@ $phoneNumber->equals($other); // -> true
 
 #### isMobilis, isDjezzy and isOoredoo
 
-To know if the object respresent a Mobilis, Djezzy or Ooredoo phone number
+To know if the object respresents a Mobilis, Djezzy or Ooredoo phone number
 
 ```php
 $phoneNumber = AlgerianMobilePhoneNumber::fromString('0699000000');
@@ -50,14 +50,14 @@ $phoneNumber->isOoredoo(); // -> false
 ```
 
 #### __toString
-In order to cast to object to string:
+Casts the value object to string:
 ```php
 $phoneNumber = AlgerianMobilePhoneNumber::fromString('0699000000');
 (string)$phoneNumber; // -> '0699000000'
 ```
 
 ## Contribution
-Any contribution are welcome to make this library better.
+Contributions are welcome to make this library better.
 
 ### Testing:
 Inside the repository :
