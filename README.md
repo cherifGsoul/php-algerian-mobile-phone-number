@@ -50,7 +50,7 @@ $phoneNumber->isOoredoo(); // -> false
 ```
 
 #### __toString
-In order to cast to object to string:
+Casts the value object to string:
 ```php
 $phoneNumber = AlgerianMobilePhoneNumber::fromString('0699000000');
 (string)$phoneNumber; // -> '0699000000'
