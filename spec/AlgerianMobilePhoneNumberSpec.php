@@ -59,26 +59,26 @@ class AlgerianMobilePhoneNumberSpec extends ObjectBehavior
         $this->asString()->shouldReturn('00213799000000');
     }
 
-    function it_throws_for_ooreedoo_phone_number_length_after_local_indicative()
+    function it_throws_for_ooredoo_phone_number_length_after_local_indicative()
     {
         $this->beConstructedFromString('05990000');
         $this->shouldThrow(InvalidAlgerianMobilePhoneNumberException::class)->duringInstantiation();
     }
 
 
-    function it_accepts_valid_ooreedoo_phone_number()
+    function it_accepts_valid_ooredoo_phone_number()
     {
         $this->beConstructedFromString('0599000000');
         $this->asString()->shouldReturn('0599000000');
     }
 
-    function it_accepts_valid_ooreedoo_phone_number_with_plus_international_indicative()
+    function it_accepts_valid_ooredoo_phone_number_with_plus_international_indicative()
     {
         $this->beConstructedFromString('+213599000000');
         $this->asString()->shouldReturn('+213599000000');
     }
 
-    function it_accepts_valid_ooreedoo_phone_number_with_00_international_indicative()
+    function it_accepts_valid_ooredoo_phone_number_with_00_international_indicative()
     {
         $this->beConstructedFromString('00213599000000');
         $this->asString()->shouldReturn('00213599000000');
@@ -109,16 +109,16 @@ class AlgerianMobilePhoneNumberSpec extends ObjectBehavior
         $this->shouldNotBeDjezzy();
     }
 
-    function it_knows_if_it_represents_ooreedoo_number()
+    function it_knows_if_it_represents_ooredoo_number()
     {
         $this->beConstructedFromString('0599000000');
-        $this->shouldBeOoreedoo();
+        $this->shouldBeOoredoo();
     }
 
-    function it_knows_if_it_doesnt_represents_ooreedoo_number()
+    function it_knows_if_it_doesnt_represents_ooredoo_number()
     {
         $this->beConstructedFromString('0699000000');
-        $this->shouldNotBeOoreedoo();
+        $this->shouldNotBeOoredoo();
     }
 
     function it_is_immutable()
