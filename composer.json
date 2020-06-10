@@ -1,0 +1,29 @@
+{
+    "name": "cherif/algerian-mobile-phone-number",
+    "description": "Algerian mobile phone number value object",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Cherif BOUCHELAGHEM",
+            "email": "cherif.bouchelaghem@gmail.com"
+        }
+    ],
+    "require": {
+        "php": "7.2.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Cherif\\AlgerianMobilePhoneNumber\\": "src/"
+        }
+    },
+    "config": {
+        "bin-dir": "bin"
+    },
+    "require-dev": {
+        "phpspec/phpspec": "^6.1"
+    },
+    "scripts": {
+        "test": "./bin/phpspec run"
+    }
+}
