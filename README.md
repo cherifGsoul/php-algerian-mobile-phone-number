@@ -70,6 +70,16 @@ $phoneNumber->isDjezzy(); // -> false
 $phoneNumber->isOoredoo(); // -> false
 ```
 
+#### withNumber
+
+```php
+use Cherif\AlgerianMobilePhoneNumber\AlgerianMobilePhoneNumber;
+
+$phoneNumber = AlgerianMobilePhoneNumber::fromString('06-99-00-00-00');
+$phoneNumber->withNumber('07-99-00-00-00'); // Will return a new instance that represents the new number
+```
+
+
 #### __toString
 Casts the value object to string:
 ```php
