@@ -28,9 +28,17 @@ use Cherif\AlgerianMobilePhoneNumber\AlgerianMobilePhoneNumber;
 $phoneNumber = AlgerianMobilePhoneNumber::fromString('06 99 00 00 00');
 ```
 
+Or:
+
+```php
+use Cherif\AlgerianMobilePhoneNumber\AlgerianMobilePhoneNumber;
+
+$phoneNumber = AlgerianMobilePhoneNumber::fromString('06-99-00-00-00'); //
+```
+
 The value object class accepts international phone indicative, 00213 or +213, too.
 
-> __NOTE__: For now only space separated numbers are accepted.
+> __NOTE__: For now only space and dash "-" separated numbers are accepted.
 
 
 ### API:
