@@ -71,7 +71,7 @@ class AlgerianMobilePhoneNumber
      * Checks if it is Ooredoo phone number
      * @return bool
      */
-    public function isOoredoo()
+    public function isOoredoo(): bool
     {
         $pattern = '/^(00213|\+213|0)(5)[0-9]{8}/';
         return !!preg_match($pattern, $this->number);
@@ -100,7 +100,7 @@ class AlgerianMobilePhoneNumber
      * Invoked during string casting
      * @return string
      */
-    public function __toString()
+    public function __toString(): string
     {
         return $this->asString();
     }
