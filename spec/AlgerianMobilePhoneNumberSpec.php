@@ -128,4 +128,16 @@ class AlgerianMobilePhoneNumberSpec extends ObjectBehavior
         $this->shouldNotBe($other);
     }
 
+    function it_accepts_space_separated_format()
+    {
+        $this->beConstructedFromString('06 99 00 00 00');
+        $this->asString()->shouldReturn('0699000000');
+    }
+
+    function it_accepts_space_separated_format_with_international_indicative()
+    {
+        $this->beConstructedFromString('00213 6 99 00 00 00');
+        $this->asString()->shouldReturn('00213699000000');
+    }
+
 }
