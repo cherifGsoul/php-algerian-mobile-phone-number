@@ -33,6 +33,7 @@ class AlgerianMobilePhoneNumber
      */
     public static function fromString(string $number): AlgerianMobilePhoneNumber
     {
+        $number = preg_replace("/\s+/", "", $number);
         $algerianMobilePhoneNumber = new AlgerianMobilePhoneNumber($number);
         return $algerianMobilePhoneNumber;
     }
