@@ -152,4 +152,9 @@ class AlgerianMobilePhoneNumberSpec extends ObjectBehavior
         $this->asString()->shouldReturn('00213699000000');
     }
 
+    function it_accepts_mixed_separated_format()
+    {
+        $this->beConstructedFromString('06 9900-00-00');
+        $this->asString()->shouldReturn('0699000000');
+    }
 }
