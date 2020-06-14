@@ -96,7 +96,7 @@ Contributions are welcome to make this library better.
 $ git clone git@github.com:cherifGsoul/php-algerian-mobile-phone-number.git
 ```
 
-and enter to the cloned directory.
+and enter to the cloned repository directory.
 
 - Install dependencies:
 
@@ -111,3 +111,6 @@ Run composer script for testing:
 $ composer test
 ```
 
+### License
+
+[MIT License](LICENSE).
