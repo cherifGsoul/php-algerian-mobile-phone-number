@@ -25,6 +25,6 @@
         "phpspec/phpspec": "^6.1"
     },
     "scripts": {
-        "test": "./bin/phpspec run"
+        "test": "./bin/phpspec run --ansi"
     }
 }

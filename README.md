@@ -90,10 +90,24 @@ $phoneNumber = AlgerianMobilePhoneNumber::fromString('0699000000');
 ## Contribution
 Contributions are welcome to make this library better.
 
-### Testing:
-Inside the repository :
+- Clone the repo:
 
 ```shell
-$ ./bin/phpspec run
+$ git clone git@github.com:cherifGsoul/php-algerian-mobile-phone-number.git
+```
+
+and enter to the cloned directory.
+
+- Install dependencies:
+
+```shell
+$ composer install
+```
+
+### Testing:
+Run composer script for testing:
+
+```shell
+$ composer test
 ```
 

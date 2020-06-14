@@ -157,4 +157,25 @@ class AlgerianMobilePhoneNumberSpec extends ObjectBehavior
         $this->beConstructedFromString('06 9900-00-00');
         $this->asString()->shouldReturn('0699000000');
     }
+
+    function it_can_compare_with_0_and_00213_indicatives()
+    {
+        $this->beConstructedFromString('0600000000');
+        $other = AlgerianMobilePhoneNumber::fromString('00213600000000');
+        $this->equals($other)->shouldReturn(true);
+    }
+
+    function it_can_compare_with_0_and_plus_213_indicatives()
+    {
+        $this->beConstructedFromString('0600000000');
+        $other = AlgerianMobilePhoneNumber::fromString('+213600000000');
+        $this->equals($other)->shouldReturn(true);
+    }
+
+    function it_can_compare_with_00213_and_plus_213_indicatives()
+    {
+        $this->beConstructedFromString('00213600000000');
+        $other = AlgerianMobilePhoneNumber::fromString('+213600000000');
+        $this->equals($other)->shouldReturn(true);
+    }
 }

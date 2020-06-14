@@ -93,7 +93,14 @@ class AlgerianMobilePhoneNumber
      */
     public function equals(AlgerianMobilePhoneNumber $other): bool
     {
-        return $this->asString() == $other->asString();
+        if ($this->asString() == $other->asString()) {
+            return true;
+        }
+        
+        $pattern = '/^\+?(00213|\+213|0)/';
+        $otherNumber = preg_replace($pattern, '', $other->asString());
+        $number = preg_replace($pattern, '', $this->asString());
+        return $number == $otherNumber;
     }
 
     /**
