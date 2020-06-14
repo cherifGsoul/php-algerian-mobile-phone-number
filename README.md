@@ -111,6 +111,6 @@ Run composer script for testing:
 $ composer test
 ```
 
-### License
+## License
 
 [MIT License](LICENSE).
