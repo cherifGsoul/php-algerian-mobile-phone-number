@@ -93,7 +93,7 @@ Contributions are welcome to make this library better.
 - Clone the repo:
 
 ```shell
-$ git clone git@github.com:cherifGsoul/php-algerian-mobile-phone-number.git
+$ git clone git@github.com:cherifGsoul/php-algerian-mobile-phone-number-doctrine.git
 ```
 
 and enter to the cloned repository directory.
